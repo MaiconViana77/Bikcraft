@@ -1,0 +1,73 @@
+.bicicleta-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.bicicleta-lista h2 {
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.bicicleta-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+  /* com o "overflow-x" vc decide oq acontece cosa o se o container extoura, ele adiciona uma barrar de scroll apenas na area selecionada e não em td o site  */
+}
+
+/* usar para definir q as li tenha um tamanho minimo de 280px caso contrario ira quebrar */
+.bicicleta-lista li {
+  min-width: 280px;
+}
+
+.bicicleta-lista a {
+  display: block;
+}
+/* com o apenas o "block" ele pegar o height e width porem não fica na mesma linha */
+
+.bicicleta-lista img {
+  margin-bottom: 16px;
+}
+
+.bicicleta-lista h3 {
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bicicleta-lista h3::before {
+  content: "";
+  display: inline-block;
+  /* com o inline ele pegar o height e width porem fica na mesma linha */
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  background: var(--cor-p1);
+  transition: width 0.2s;
+  /* usado criar uma transição menos ou mais rapida diretamente no "width" */
+}
+
+/* usado para criar animação no datalhe */
+.bicicleta-lista a:hover h3::before {
+  width: 24px;
+}
+
+.bicicleta-lista li span {
+  padding-left: 20px;
+  /* para alinha o preço usase o (margin-bottom do h3) +  (width do before)  */
+}
+
+@media (max-width: 800px) {
+  .bicicleta-lista {
+    padding-bottom: 60px;
+  }
+
+  .bicicleta-lista ul {
+    gap: 20px;
+  }
+}
