@@ -18,10 +18,21 @@
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   box-shadow: 0 1px 2px 0 rgb(0, 0, 0, 0.1);
   /* criar sombras nos botoes (x,y,blur,tamanho q o elemento cresce a mais doque o button, cor) */
+  max-width: max-content;
+  /* não deixar o batão se expandia a mais doque o tanho dele  */
 }
 
 .botao:hover {
   background: linear-gradient(#ffb60b, #e59317);
+}
+
+.botao.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.botao.secundario:hover {
+  background: var(--cor-9);
 }
 
 @media (max-width: 600px) {
@@ -50,3 +61,4 @@
 .link:hover {
   color: var(--cor-0);
 }
+
