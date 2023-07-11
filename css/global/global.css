@@ -10,8 +10,8 @@ h3,
 h4,
 ul,
 p,
-span,blockquote 
-{
+span,
+blockquote {
   margin: 0px;
 }
 
@@ -37,5 +37,3 @@ img[src$=".jpg"] {
 /* usado para arredondar bordas apenas de img que tenha "jpg" */
 
 /* atenção o condigo tem que ser td junto exemplo: (  img[src$=".jpg"]  ) */
-
-

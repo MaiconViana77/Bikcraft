@@ -5,7 +5,6 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 
-
 /* utilidade */
 @import "./utilidades/componentes.css";
 
@@ -15,12 +14,8 @@
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
 
-
-
 /* bicicletas-lista */
 @import "./bicicletas/bicicletas-lista.css";
 
 /* seguros */
 @import "./seguros/seguros.css";
-
-
