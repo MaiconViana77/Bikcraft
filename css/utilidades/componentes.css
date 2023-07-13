@@ -42,6 +42,29 @@
   }
 }
 
+.botao.seta{
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+content: "";
+display: inline-block;
+width: 18px;
+height: 10px;
+margin-left: 15px;
+background: url("../../img/icones/seta.svg");
+transition: transform 0.2s ;
+/* adiciona um deley no movimento da seta */
+}
+/* adicionar a seta no btn */
+
+.botao.seta:hover::after{
+  transform: translateX(4px);
+}
+  /* adiciona o movimento no btn no eixo X com o " transform: translateX(4px) " */
+
+
 .link {
   display: inline-block;
   color: var(--cor-p1);
