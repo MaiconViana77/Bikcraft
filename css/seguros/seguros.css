@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+#seguros .seguros {
+  padding-top: 0;
+}
+
 .seguros h2 {
   grid-column: 1/-1;
   /* faz o "h2" pegar de ponta a ponta jogando os planos de segiro para baixo */
@@ -21,6 +25,7 @@
   padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
+  border-radius: 4px;
 }
 
 .seguros-itens h3 {
@@ -69,3 +74,4 @@
     grid-template-columns: 1fr;
   }
 }
+
