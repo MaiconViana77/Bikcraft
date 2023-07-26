@@ -8,9 +8,9 @@
   box-sizing: border-box;
 }
 
-/* #bicicleta .bicicleta-lista ul {
+#bicicleta .bicicleta-lista ul {
   padding: 0px 0px 20px 0px;
-} */
+}
 
 .bicicleta-lista ul {
   display: flex;
