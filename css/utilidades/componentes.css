@@ -20,6 +20,9 @@
   /* criar sombras nos botoes (x,y,blur,tamanho q o elemento cresce a mais doque o button, cor) */
   max-width: max-content;
   /* não deixar o batão se expandia a mais doque o tanho dele  */
+  border: none;
+  cursor: pointer;
+/* para criar a mãozinha no btn */
 }
 
 .botao:hover {
@@ -91,6 +94,7 @@ transition: transform 0.2s ;
   padding-top: 60px ;  
 padding-bottom: 60px ;  
 }
+
 
 
 .titulo p{

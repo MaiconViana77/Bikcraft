@@ -38,3 +38,8 @@ img[src$=".jpg"] {
 /* usado para arredondar bordas apenas de img que tenha "jpg" */
 
 /* atenção o condigo tem que ser td junto exemplo: (  img[src$=".jpg"]  ) */
+
+label,input {
+  margin: 0px;
+  padding: 0px;
+}
