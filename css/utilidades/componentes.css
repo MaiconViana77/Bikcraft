@@ -22,7 +22,7 @@
   /* não deixar o batão se expandia a mais doque o tanho dele  */
   border: none;
   cursor: pointer;
-/* para criar a mãozinha no btn */
+  /* para criar a mãozinha no btn */
 }
 
 .botao:hover {
@@ -45,28 +45,27 @@
   }
 }
 
-.botao.seta{
+.botao.seta {
   display: flex;
   align-items: center;
 }
 
 .botao.seta::after {
-content: "";
-display: inline-block;
-width: 18px;
-height: 10px;
-margin-left: 15px;
-background: url("../../img/icones/seta.svg");
-transition: transform 0.2s ;
-/* adiciona um deley no movimento da seta */
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 15px;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
+  /* adiciona um deley no movimento da seta */
 }
 /* adicionar a seta no btn */
 
-.botao.seta:hover::after{
+.botao.seta:hover::after {
   transform: translateX(4px);
 }
-  /* adiciona o movimento no btn no eixo X com o " transform: translateX(4px) " */
-
+/* adiciona o movimento no btn no eixo X com o " transform: translateX(4px) " */
 
 .link {
   display: inline-block;
@@ -91,25 +90,27 @@ transition: transform 0.2s ;
 /* titulo internos */
 .titulo-bg {
   background: var(--cor-11);
-  padding-top: 60px ;  
-padding-bottom: 60px ;  
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+.titulo {
+  background: url('../../img/dec/top-right.svg') no-repeat top right 20px;
+}
 
-
-.titulo p{
-margin-bottom: 4px;
+.titulo p {
+  margin-bottom: 4px;
 }
 
 @media (max-width: 800px) {
- .titulo {
-  padding-top: 40px;
-  padding-bottom: 40px;
- }
+  .titulo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
- .titulo p{
-  font-size: 1rem;
-  text-transform: lowercase;
-  font-weight: 400;
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
   }
-  }
+}
