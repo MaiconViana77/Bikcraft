@@ -28,6 +28,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -39,7 +40,8 @@ img[src$=".jpg"] {
 
 /* atenção o condigo tem que ser td junto exemplo: (  img[src$=".jpg"]  ) */
 
-label,input {
+label,
+input {
   margin: 0px;
   padding: 0px;
 }
