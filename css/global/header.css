@@ -41,7 +41,9 @@
   /* definido para tira os elementos do fluxo, com isso não bugar visulmente o header com as margins e padding */
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after
+ {
   width: 100%;
   /* width de 100% pega a largura do conteudo pai */
 }
